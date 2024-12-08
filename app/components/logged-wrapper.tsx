@@ -29,7 +29,7 @@ export default function LoggedWrapper({ children }: { children: ReactNode }) {
     });
 
     return () => unsubscribe();
-  }, []);
+  }, [navigate]);
 
   return (
     <AuthProvider>
